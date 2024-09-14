@@ -81,7 +81,7 @@ const clearForm = () => {
                                 class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         </form>
                         <div class="max-w-screen-2xl mx-auto p-10">
-                            <h1 class="text-5xl text-center">{{ currentCourseId ? 'Edit Course' : 'Add Course' }}</h1>
+                            <h1 class="text-5xl text-center">{{ currentCourseId ? 'Update Course' : 'Add Course' }}</h1>
                             <form @submit.prevent="handleSubmit">
                                 <div class="md:flex mb-8">
                                     <div class="form-control md:w-1/2">
@@ -115,7 +115,7 @@ const clearForm = () => {
                                             v-model="tuition_fee" class="input w-full input-bordered" />
                                     </div>
                                 </div>
-                                <input type="submit" :value="currentCourseId ? 'Edit Course' : 'Add Course'"
+                                <input type="submit" :value="currentCourseId ? 'Update Course' : 'Add Course'"
                                     class="btn btn-block text-white bg-purple-400" />
                             </form>
                         </div>
